@@ -1,0 +1,22 @@
+.analytics-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.graphs-container {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.graph {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.ml-section {
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+}

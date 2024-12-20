@@ -1,0 +1,122 @@
+/* General Page Styling */
+.remote-control-container {
+    font-family: "Arial, sans-serif";
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    background: linear-gradient(to bottom right, #e0f7fa, #e0f2f1);
+    min-height: 100vh;
+  }
+  
+  /* Title Styling */
+  .title {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #aaa;
+  }
+  
+  /* Status Container */
+  .status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Status Text */
+  .status-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Motor Container */
+  .motor {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .motor.on {
+    background-color: #4caf50; /* Green for ON */
+    animation: spin 2s linear infinite;
+  }
+  
+  .motor.off {
+    background-color: #ff5252; /* Red for OFF */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Filling Effect */
+  .fill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #2196f3;
+    border-radius: 0 0 50% 50%;
+  }
+  
+  .filling {
+    animation: fillEffect 2s infinite ease-in-out alternate;
+  }
+  
+  @keyframes fillEffect {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 60%;
+    }
+  }
+  
+  /* Button Styling */
+  .toggle-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-on {
+    background-color: #4caf50;
+  }
+  
+  .button-off {
+    background-color: #ff5252;
+  }
+  
+  .toggle-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Loading Text */
+  .loading {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Error Text */
+  .error {
+    color: red;
+    font-size: 16px;
+  }
+  

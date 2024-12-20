@@ -1,0 +1,33 @@
+.pipeline-container {
+  position: relative;
+  text-align: center;
+}
+
+#three-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+#labels-container {
+  position: absolute;
+  top: 120px; /* Place labels above pipeline */
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  font-size: 14px;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transform: translateX(-50%); /* Center label horizontally */
+  z-index: 10;
+}
+
+.leak {
+  color: red;
+  font-weight: bold;
+}

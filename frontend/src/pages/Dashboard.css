@@ -1,0 +1,69 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.navigation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #007bff; /* Blue for the sidebar */
+  color: #fff; /* White text for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #0056b3; /* Darker blue for buttons */
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff; /* White text */
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #004085; /* Even darker blue on hover */
+}
+
+.nav-button span {
+  margin-left: 10px;
+}
+
+.sensor-data-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.sensor-card {
+  background-color: #ffffff; /* White cards for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sensor-card h2 {
+  color: #333;
+}
+
+.sensor-card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff; /* Blue for numbers */
+}

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+  }
+  
+  .pipeline-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .station-label {
+    position: absolute;
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .label-content {
+    font-family: "Arial", sans-serif;
+  }
+  
+  .leak-alert {
+    color: red;
+    font-weight: bold;
+  }
+  
